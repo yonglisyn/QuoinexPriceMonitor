@@ -1,0 +1,19 @@
+import product
+import requests
+import json
+import datetime
+print('test')
+apiBase = 'https://api.quoine.com/'
+
+a = 1.012344
+b = 2.00998812
+r = requests.get(apiBase + '/products/')
+data = json.loads(r.text)
+targetData = [x for x in data if int(x['id']) in list(map(int,product.Product))]
+print(targetData)
+ print(qashsgd)
+    print(qasheth)
+    print(ethsgd)
+    print(qashbtc)
+    print(btcsgd)
+    print(ethbtc)
